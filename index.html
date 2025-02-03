@@ -15,6 +15,39 @@
   </head>
   <body>
     <div class="container">
+      <div class="ticket-container" style="display: none">
+        <h2>Congrats, <span id="ticket-name"></span>!</h2>
+        <p>Your ticket is ready.</p>
+        <p>
+          We've emailed your ticket to <span id="ticket-email"></span> and will
+          send updates in the run-up to the event.
+        </p>
+
+        <div class="ticket">
+          <div class="ticket-header">
+            <img
+              src="./images/logo-mark.svg"
+              alt="Coding Conf Logo"
+              height="30"
+              width="30"
+            />
+            <span>Coding Conf</span>
+          </div>
+          <p>Jan 31, 2025 / Austin, TX</p>
+          <div class="ticket-user">
+            <img
+              id="avatar-preview"
+              src=""
+              alt="User Avatar"
+              width="50"
+              height="50"
+            />
+            <p id="ticket-username"></p>
+            <p id="ticket-github"></p>
+          </div>
+        </div>
+      </div>
+
       <div class="companyName">
         <img
           class="logo_img"
@@ -93,5 +126,6 @@
       />
       <button class="submit_btn">Generate My Ticket</button>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
